@@ -15,9 +15,9 @@
 
 pragma solidity =0.6.6;
 
-contract WETH9 {
-    string public name     = "Wrapped Ether";
-    string public symbol   = "WETH";
+contract WXDC {
+    string public name     = "Wrapped XDC";
+    string public symbol   = "WXDC";
     uint8  public decimals = 18;
 
     event  Approval(address indexed src, address indexed guy, uint wad);
@@ -57,8 +57,8 @@ contract WETH9 {
     }
 
     function transferFrom(address src, address dst, uint wad)
-        public
-        returns (bool)
+    public
+    returns (bool)
     {
         require(balanceOf[src] >= wad, "");
 
